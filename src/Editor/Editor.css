@@ -1,0 +1,43 @@
+.editor-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input[type="color"] {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toolbar button:hover,
+.toolbar select:hover {
+  background: #e3eaf4;
+}
+
+.editor {
+  border: 1px solid #ccc;
+  min-height: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 16px;
+}
