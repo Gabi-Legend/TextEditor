@@ -1,43 +1,51 @@
-.editor-container {
-  max-width: 900px;
+.editor-wrapper {
+  max-width: 960px;
   margin: 40px auto;
-  font-family: sans-serif;
-  padding: 20px;
-  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  background-color: #fff;
 }
 
-.toolbar {
+.toolbar-modern {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 15px;
+  padding: 15px 20px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.toolbar button,
-.toolbar select,
-.toolbar input[type="color"] {
-  padding: 6px 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+.toolbar-modern button,
+.toolbar-modern select,
+.toolbar-modern input[type="color"] {
   background: white;
+  border: 1px solid #d1d5db;
+  padding: 6px 10px;
   border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.toolbar button:hover,
-.toolbar select:hover {
-  background: #e3eaf4;
+.toolbar-modern button:hover,
+.toolbar-modern select:hover {
+  background-color: #eef1f5;
 }
 
-.editor {
-  border: 1px solid #ccc;
+.toolbar-modern .icon {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modern-editor {
   min-height: 400px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  line-height: 1.6;
+  padding: 25px;
+  line-height: 1.8;
   font-size: 16px;
+  color: #111827;
 }
